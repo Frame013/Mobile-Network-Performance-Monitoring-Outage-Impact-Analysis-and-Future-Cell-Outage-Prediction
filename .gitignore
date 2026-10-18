@@ -1,0 +1,26 @@
+# Data (too large for GitHub; see data/README.md)
+data/*
+!data/README.md
+*.csv
+*.parquet
+*.parquet.tmp
+*.duckdb
+*.duckdb.wal
+duckdb_tmp/
+feature_work/
+next_steps/
+
+# Generated outputs
+project_outputs/
+outputs/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
