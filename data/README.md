@@ -14,6 +14,5 @@ Dataset 2 columns: `Timestamp, Site_ID, Cell_ID, Record_Type, Status, Traffic, C
 Files created while running the notebooks (also not stored in Git):
 
 - `Dataset_2_Cell_KPI_Outage/KPI_Model_Data.csv` and `KPI_Feature_Data.csv` (Sections 6.3–6.4, ~62 GB)
-- `next_steps/dataset2.parquet` (notebook 02, ~3 GB)
 
 To regenerate the data, see the generator scripts in `scripts/`.

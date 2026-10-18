@@ -38,8 +38,7 @@ We study what happens when a mobile cell goes down: how much service is lost, ho
 ```
 .
 ├── notebooks/
-│   ├── 01_main_analysis.ipynb        # full pipeline: EDA, RQ1, RQ2, features, labels, models, evaluation
-│   └── 02_next_steps_rq2_rq3.ipynb   # in progress: outage-risk model (Poisson) + neighbor impact by group
+│   └── Mobile_Network_Outage_Progress.ipynb   # full pipeline: EDA, outage impact, features, labels, models, evaluation
 ├── scripts/
 │   ├── generate_dataset2_v1_original.py  # original KPI/outage generator (no warning signal)
 │   ├── generate_dataset2_v2_signal.py    # revised generator with adjustable warning signal (positive control)
@@ -64,10 +63,9 @@ Python 3.12 was used.
 ## How to run
 
 1. Put the data files in one folder (see `data/README.md`).
-2. **`notebooks/01_main_analysis.ipynb`** — edit the folder path in Section 5.1 (`PROJECT_DIR`) and the paths in Sections 5.3–5.5, then run the cells in order (Kernel → Restart & Run All).
+2. **`notebooks/Mobile_Network_Outage_Progress.ipynb`** — edit the folder path in Section 5.1 (`PROJECT_DIR`) and the paths in Sections 5.3–5.5, then run the cells in order (Kernel → Restart & Run All).
    - The feature step (5.4) writes a large intermediate file (~62 GB). Make sure the drive has enough free space.
    - Section 5.9 (neighbor and shared-site features) reuses variables from Sections 5.2 and 5.5, so run it after them.
-3. **`notebooks/02_next_steps_rq2_rq3.ipynb`** — edit the paths in Step 0 and run Steps 0–6. It converts the CSV to Parquet once (a few minutes) and then runs in minutes.
 
 ## Methods (short)
 
