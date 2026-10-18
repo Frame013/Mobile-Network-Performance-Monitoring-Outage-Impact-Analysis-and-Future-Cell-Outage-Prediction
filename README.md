@@ -64,9 +64,9 @@ Python 3.12 was used.
 ## How to run
 
 1. Put the data files in one folder (see `data/README.md`).
-2. **`notebooks/01_main_analysis.ipynb`** — edit the folder path in Section 6.1 (`PROJECT_DIR`) and the paths in Sections 6.3–6.5, then run the cells in order.
-   - The feature step (6.4) writes a large intermediate file (~62 GB). Make sure the drive has enough free space.
-   - Section 6.9 calls `scripts/prepare_section_6_9a.py` (neighbor/shared-site helper). **This file still has to be added to `scripts/`.**
+2. **`notebooks/01_main_analysis.ipynb`** — edit the folder path in Section 5.1 (`PROJECT_DIR`) and the paths in Sections 5.3–5.5, then run the cells in order (Kernel → Restart & Run All).
+   - The feature step (5.4) writes a large intermediate file (~62 GB). Make sure the drive has enough free space.
+   - Section 5.9 (neighbor and shared-site features) reuses variables from Sections 5.2 and 5.5, so run it after them.
 3. **`notebooks/02_next_steps_rq2_rq3.ipynb`** — edit the paths in Step 0 and run Steps 0–6. It converts the CSV to Parquet once (a few minutes) and then runs in minutes.
 
 ## Methods (short)
